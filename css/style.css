@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+
+/* HEADER */
+.main-header {
+   background-color: whitesmoke;
+   padding-top: 20px;
+   padding-bottom: 40px;
+}
+.container h1 {
+    text-align: center;
+    font-size: 1.35em;
+    margin-bottom: 20px;
+    font-family: 'Trirong', serif;;
+}
+.main-nav {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.main-nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: black;
+    font-family: 'Trirong', serif;
+    font-size: .85em;
+}
+.main-nav li {
+    padding: 10px 0;
+    margin: 5px 8px;
+    background-color: #fff;
+}
+.intro img {
+    margin: 20px auto;
+    width: 60%;
+    display: block;
+}
+.intro p {
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+
+/* PORTFOLIO */
+#portfolio {
+    margin: 0 auto;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    text-align: center;
+}
+#port-header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1.25em;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    text-align: center;
+}
+.col img {
+    max-width: 90%;
+}
+.col h3 {
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 1.25em;
+}
+.col p {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    max-width: 84%;
+}
+
+
+/* CONTACT */
+#contact {
+    background-color: whitesmoke;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+#contact h2 {
+    font-size: 1.25em;
+    padding-bottom: 30px;
+}
+#contact p {
+    line-height: 1.4em;
+    max-width: 90%;
+    padding-bottom: 15px;
+}
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: whitesmoke;
+    font-family: 'Trirong', serif;
+    font-size: .75em;
+}
+footer ul {
+    list-style: none;
+}
+footer a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+.full {
+    display: none;
+}
+
+
+
+/* 768px MEDIA QUERY */
+@media screen and (min-width: 768px) {
+    .main-nav li {
+        display: inline-block;
+        background-color: transparent;
+    }
+    .intro {
+        display: inline-flex;
+        flex-direction: row-reverse;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .intro img {
+        width: 40%;
+    }
+    .intro p {
+        text-align: left;
+        margin-top: 20px;
+        height: 179px;
+        font-size: 1.25em;
+        font-weight: 100;
+    }
+
+
+    /* PORTFOLIO */
+    #portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .col {
+        flex-basis: 50%
+    }
+    
+
+    /* CONTACT */
+    #contact p {
+        max-width: 55%;
+    }
+
+    /* FOOTER */
+    .top {
+        display: none;
+    }
+    .full {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    footer {
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+    footer h3 {
+        margin-left: 20px;
+        margin-top: 8px;
+    }
+    .footer-nav {
+        margin-right: 20px;
+        margin-top: 8px;
+    } 
+}
+
+/* 1024px MEDIA QUERY */
+@media screen and (min-width: 1024px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-nav, .main-nav li {
+        width: initial;
+        margin-bottom: 0;
+    }
+    .container h1 {
+        margin-left: 40px;
+    }
+    .container nav {
+        margin-right: 40px;
+    }
+    .intro {
+        margin-left: 30px;
+        margin-right: 40px;
+    }
+    .intro p {
+        margin-top: 20px;
+    }
+
+    /* PORTFOLIO */
+    .col {
+        flex-basis: calc(33.333% - 40px);
+        margin: 20px;
+    }
+
+    #contact p {
+        max-width: 40%;
+    }
+}

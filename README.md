@@ -1,2 +1,2 @@
-# techdegree_project_2
- Unit 2 - Responsive Layout
+# responsive_layout_v1
+ Second Techdegree Project
